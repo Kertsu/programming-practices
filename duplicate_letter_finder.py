@@ -6,8 +6,6 @@ def find_dupe():
         for j in range(i, len(word)-1):
             next_letter = word[j+1]
             if next_letter == current_letter:
-                global duplicate_letter
-                duplicate_letter = current_letter
                 return True
     return False
 
